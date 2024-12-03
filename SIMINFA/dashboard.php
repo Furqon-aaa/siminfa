@@ -57,17 +57,17 @@ if(isset($_POST['logout'])) {
   <div class="cards">
       <div class="card">
         <img class="img" src="images/structure.png"/>
-        <h3 class="card-h3">CLASS STRUCTURE</h3>
+        <h3 class="card-h3">STRUKTUR KELAS</h3>
         <a class="view" href="structure.php">view.</a>
       </div>
       <div class="card">
         <img class="img" src="images/schedule.png"/>
-        <h3 class="card-h3">CLASS SCHEDULE</h3>
+        <h3 class="card-h3">JADWAL KELAS</h3>
         <a class="view" href="schedule.php">view.</a>
       </div>
       <div class="card">
         <img class="img" src="images/archive.png"/>
-        <h3 class="card-h3">CLASS ARCHIVE</h3>
+        <h3 class="card-h3">ARSIP KELAS</h3>
         <a class="view" href="archive.php">view.</a>
       </div>
     </div>
