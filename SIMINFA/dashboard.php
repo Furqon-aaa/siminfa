@@ -86,15 +86,6 @@ if(isset($_POST['logout'])) {
             <p class="ppp">
             <a class="ppp-see" href="">See More detail ></a>
             </p>
-            
-        </div>
-        <div class="info1">
-            <h4>INFO TIGA</h4>
-            <p class="ppp">
-            <a class="ppp-see" href="">See More detail ></a>
-            </p>
-            
-        </div>
         <div class="info1">
             <h4>INFO DUA</h4>
         </div>
