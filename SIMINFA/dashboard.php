@@ -70,6 +70,11 @@ if(isset($_POST['logout'])) {
         <h3 class="card-h3">ARSIP KELAS</h3>
         <a class="view" href="archive.php">view.</a>
       </div>
+      <div class="card">
+        <img class="img" src="images/archive.png"/>
+        <h3 class="card-h3">KHAS KELAS</h3>
+        <a class="view" href="archive.php">view.</a>
+      </div>
     </div>
   </section>
   <!-- Card END -->
