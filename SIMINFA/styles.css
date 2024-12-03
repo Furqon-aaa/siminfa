@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(images/bg-1.png);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+  .con {
+    margin-inline: 10px;
+  }
+  
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .nav-links a:hover {
+    color: #00b4d8;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .section {
+    padding: 100px;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    margin-top: 300px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+  
+  .card {
+    background-image: url(images/menu.png);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: backInRight; /* animasi masuk dengan referensi animate.css */
+    animation-duration:2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .visi {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 800px;
+    width: 50vh;
+    color: white;
+  }
+
+  .img {
+    display: flex;
+    justify-items: left;
+    width: 120px;
+    height: 80px;
+  }
+
+  .card-h3 {
+    display: flex;
+    justify-items: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .view {
+    display: flex;
+    justify-content: right;
+    color: white;
+  }
+
+  .view:hover {
+    color: rgb(32, 120, 179);
+  }
+
+  .info {
+    font-size:x-large;
+    color: white;
+    margin-top: 0px;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: backInRight; /* animasi masuk dengan referensi animate.css */
+    animation-duration:2s;
+  }
+
+  .see {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .see-more {
+    color: rgb(32, 120, 179);
+    text-decoration: none;
+  }
+
+  .see-more:hover {
+    color: blue;
+  }
+
+  .informasi {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+
+  .info1 {
+    background-image: url(images/menu.png);
+    box-shadow: 16px -9px 25px 0px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 16px -9px 25px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: 16px -9px 25px 0px rgba(0,0,0,0.65);
+    color: white;
+    padding: 20px;
+    width: 20%;
+    height: 400px;
+    margin: 2px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .ppp {
+    color: white;
+  }
+  
+  #home { background-image: url(images/bg-1.png); }
+  #information { background-image: url(images/bg-homepage.png); }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      top: 0;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .nav-active {
+      transform: translateX(0);
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .toggle .line2 {
+      opacity: 0;
+    }
+  
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
