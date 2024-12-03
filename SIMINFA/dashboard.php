@@ -16,7 +16,7 @@ if(isset($_POST['logout'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome-SIMINFA</title>
+    <title>Welcome to the SIMINFA</title>
     <link rel="icon" href="images/ICON_SEMINFA.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link
